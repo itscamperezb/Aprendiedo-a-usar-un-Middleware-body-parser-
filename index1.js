@@ -15,9 +15,9 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //aca escribo "/submit" porque esa esa la ruta del form del archivo html
-app.post("/submit", (req, res) => {
-  console.log(req.body);
-});
+// app.post("/submit", (req, res) => {
+//   console.log(req.body);
+// });
 
 app.get("/", (req, res) => {
   console.log(__dirname + "/public/index.html");
